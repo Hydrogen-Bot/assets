@@ -37,17 +37,19 @@ function send_request(url) {
 })
 }
 
+var hashh = window.location.hash.substr(1)
+
 function shorturl(){
     var longurl = geturl();
     let genarate = genhash();
     send_request(longurl);
     
     function myFunction() {
-        document.getElementById("demo").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${genarate}`;
+        document.getElementById("demo").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
     }
 }
 
-var hashh = window.location.hash.substr(1)
+
 
 if (window.location.hash != "") {
     $.getJSON(endpoint + "/" + hashh, function (data) {
