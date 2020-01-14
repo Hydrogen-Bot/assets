@@ -45,7 +45,7 @@ function shorturl(){
     send_request(longurl);
     
     function myFunction() {
-        document.getElementById("demo").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
+        document.getElementById("button").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
     }
 }
 
