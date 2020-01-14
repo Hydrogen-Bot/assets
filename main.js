@@ -43,10 +43,7 @@ function shorturl(){
     var longurl = geturl();
     let genarate = genhash();
     send_request(longurl);
-    
-    function myFunction() {
-        document.getElementById("button").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
-    }
+    document.getElementById("button").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
 }
 
 
