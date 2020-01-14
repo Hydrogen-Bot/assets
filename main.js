@@ -15,7 +15,7 @@ function getrandom() {
     var text = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
-    for (var i = 0; i < 5; i++)
+    for (var i = 0; i < 9; i++)
         text += possible.charAt(Math.floor(Math.random() * possible.length));
     return text;
 }
@@ -43,7 +43,7 @@ function shorturl(){
     var longurl = geturl();
     let genarate = genhash();
     send_request(longurl);
-    document.getElementById("button").innerHTML = `Link generated! Link: https://hydrogen-bot.github.io/linkshortener/${hashh}`;
+    
 }
 
 
